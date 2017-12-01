@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid auto flow</title>
+
+    <style>
+        body {
+            background-color: tomato;
+        }
+
+        .grid {
+            background-color: seagreen;
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-flow: column;
+        }
+
+        .grid-item {
+            background-color: #666;
+            color: white;
+            border: 1px solid #CCC;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <span class="grid-item">Grid Item 1</span>
+        <span class="grid-item">Grid Item 2</span>
+        <span class="grid-item">Grid Item 3</span>
+        <span class="grid-item">Grid Item 4</span>
+        <span class="grid-item">Grid Item 5</span>
+        <span class="grid-item">Grid Item 6</span>
+        <span class="grid-item">Grid Item 7</span>
+        <span class="grid-item">Grid Item 8</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Complete with lines</title>
+
+    <style>
+        html,
+        body {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 50px 1fr 50px;
+        }
+
+        .header {
+            background-color: tomato;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .menu {
+            background-color: gold;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .main {
+            background-color: gray;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .footer {
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header class="header"> HEADER </header>
+        <aside class="menu"> MENU </aside>
+        <main class="main"> MAIN </main>
+        <footer class="footer"> FOOTER </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justify items y Align items</title>
+
+    <style>
+        html,
+        body {
+            background-color: tomato;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .grid {
+            display: grid;
+            height: 100%;
+            background-color: seagreen;
+            grid-auto-flow: column;
+            grid-gap: 10px;
+            justify-items: center;
+            /* left | right | center | stretch */
+            align-items: center;
+            /* start | end | center | stretch */
+        }
+
+        .grid-item {
+            background-color: #666;
+            padding: 20px;
+            color: white;
+        }
+
+        .grid-item-self {
+            justify-self: right;
+            /* left | right | center | stretch */
+            align-self: start;
+            /* start | end | center | stretch */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <span class="grid-item grid-item-self">Grid Item 1</span>
+        <span class="grid-item">Grid Item 2</span>
+        <span class="grid-item">Grid Item 3</span>
+        <span class="grid-item">Grid Item 4</span>
+        <span class="grid-item">Grid Item 5</span>
+        <span class="grid-item">Grid Item 6</span>
+    </div>
+</body>
+
+</html>

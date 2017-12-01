@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justify content y Align content</title>
+
+    <style>
+        html,
+        body {
+            background-color: tomato;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .grid {
+            display: grid;
+            height: 100%;
+            background-color: seagreen;
+            grid-auto-flow: column;
+            grid-gap: 10px;
+            justify-content: space-around;
+            /* left | right | center | stretch | space-around | space-between | space-evenly */
+            align-content: center;
+            /* left | right | center | stretch | space-around | space-between | space-evenly */
+        }
+
+        .grid-item {
+            background-color: #666;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <span class="grid-item">Grid Item 1</span>
+        <span class="grid-item">Grid Item 2</span>
+        <span class="grid-item">Grid Item 3</span>
+        <span class="grid-item">Grid Item 4</span>
+        <span class="grid-item">Grid Item 5</span>
+        <span class="grid-item">Grid Item 6</span>
+    </div>
+</body>
+
+</html>
