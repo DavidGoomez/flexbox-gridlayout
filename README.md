@@ -1,4 +1,4 @@
-# Flex box y Grid Layout
+# Flexbox y Grid Layout
 
 Ejemplos de la charla/taller de Flexbox y Grid Layout.
 
