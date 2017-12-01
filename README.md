@@ -2,6 +2,8 @@
 
 Ejemplos de la charla/taller de Flexbox y Grid Layout.
 
+## Grid Layout
+
 - Ejemplo de la propiedad grid-auto-flow.
 - Ejemplo de la función repeat
 - Ejemplo completo de maquetación de un layout
