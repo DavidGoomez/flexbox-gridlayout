@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web example</title>
+  <style>
+    html,
+    body {
+      background-color: white;
+      padding: 0;
+      height: 100%;
+      margin: 0;
+    }
+
+    .header {
+      background-color: tomato;
+      flex-basis: 50px;
+    }
+
+    .menu {
+      background-color: gold;
+      flex-basis: 150px;
+      order: -1;
+    }
+
+    .main {
+      background-color: gray;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer {
+      background-color: orange;
+      flex-basis: 50px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .inner-container {
+      display: flex;
+      flex-grow: 1;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <header class="header"> HEADER </header>
+    <div class="inner-container">
+      <main class="main"> MAIN </main>
+      <aside class="menu"> MENU </aside>
+    </div>
+    <footer class="footer"> FOOTER </footer>
+  </div>
+
+</body>
+
+</html>

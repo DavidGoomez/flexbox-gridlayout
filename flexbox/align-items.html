@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>align items</title>
+
+  <style>
+    body {
+      padding-top: 80px;
+      text-align: center;
+      font-family: monaco, monospace;
+      background-color: #0A122A;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .container {
+      width: 1000px;
+      background-color: white;
+      padding: 5px;
+      height: 300px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .box {
+      background-color: #2ECCFA;
+      color: #0A122A;
+      border: solid;
+      flex-basis: 200px;
+    }
+
+    .box1 {
+      /*height: 200px;*/
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="box box1">
+      <h2>box 1</h2>
+    </div>
+
+    <div class="box box2">
+      <h1>box 2</h2>
+
+    </div>
+
+    <div class="box box3">
+      <h3>box 3</h2>
+    </div>
+
+    <div class="box box3">
+      <h3>box 4</h2>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
